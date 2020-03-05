@@ -29,12 +29,18 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.2.4.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.2.RELEASE'
 
 	// https://mvnrepository.com/artifact/org.modelmapper/modelmapper
 	compile group: 'org.modelmapper', name: 'modelmapper', version: '2.3.6'
 	
 	// https://mvnrepository.com/artifact/com.h2database/h2
 	compile "com.h2database:h2:1.4.200"	
+	
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
+	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.10.2'
+	
 	
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
